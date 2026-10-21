@@ -1,7 +1,7 @@
 {
   "name": "Aurora Animal UltraPet",
   "short_name": "UltraPet",
-  "start_url": "index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#F7FAF8",
   "theme_color": "#0B6E3A",
