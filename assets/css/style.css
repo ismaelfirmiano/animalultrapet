@@ -342,3 +342,4 @@ footer a{color:#fff;font-weight:800;text-decoration:none}
   .toast{bottom:96px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.btn-confirma[disabled]{opacity:1}
