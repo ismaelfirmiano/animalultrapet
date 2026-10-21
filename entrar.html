@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Entrar | Aurora Animal UltraPet</title>
+<meta name="description" content="Entre na sua conta para acompanhar os agendamentos do seu pet.">
+<meta name="theme-color" content="#0B6E3A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="UltraPet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="demo-bar"><b>Demonstração</b> · Exemplo de app criado pela Firmiano. Nenhum pagamento real é processado.</div>
+<header class="top">
+  <div class="wrap">
+    <a href="index.html" class="logo" aria-label="Aurora Animal UltraPet, início">
+      <span class="logo-mark" style="color:#fff"><svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="16" rx="5" ry="4.2"/><circle cx="6" cy="10" r="2.2"/><circle cx="10" cy="6.5" r="2.2"/><circle cx="14" cy="6.5" r="2.2"/><circle cx="18" cy="10" r="2.2"/></svg></span>
+      <span class="logo-txt">Aurora Animal <span>UltraPet</span><small>Pet shop · Banho e tosa · Veterinária</small></span>
+    </a>
+    <ul class="nav">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="agendar.html">Agendar</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="entrar.html" class="ativo">Minha conta</a></li>
+    </ul>
+    <div class="top-acoes">
+      <a class="btn btn-claro btn-sm" href="entrar.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Entrar</a>
+      <a class="btn btn-vermelho btn-sm" href="agendar.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar</a>
+    </div>
+  </div>
+</header>
+
+<main class="login-grid">
+  <div class="card" data-reveal style="padding:28px">
+    <h1 style="font-size:1.8rem;margin-bottom:4px">Entrar</h1>
+    <p class="sub" style="color:var(--suave);margin-bottom:18px">Acesse para agendar mais rápido e ver o histórico do seu pet.</p>
+    <form id="f-login">
+      <div class="campo"><label for="e">E-mail</label><input id="e" type="email" autocomplete="email" placeholder="voce@email.com" required></div>
+      <div class="campo"><label for="s">Senha</label><input id="s" type="password" autocomplete="current-password" placeholder="••••••••" required minlength="4"></div>
+      <button class="btn btn-verde btn-bloco" type="submit">Entrar</button>
+    </form>
+    <button type="button" class="btn btn-claro btn-bloco" style="margin-top:10px" id="demo">Entrar com conta de demonstração</button>
+    <div class="ou">ou</div>
+    <a class="btn btn-claro btn-bloco" href="agendar.html">Agendar como convidado, sem conta</a>
+    <p style="text-align:center;margin-top:16px;font-size:.9rem">Ainda não tem conta? <a href="#" style="color:var(--verde);font-weight:800" onclick="toast('No app real, o cadastro leva menos de 1 minuto.');return false">Criar conta</a></p>
+  </div>
+  <div class="beneficios" data-reveal>
+    <h2>Por que criar uma conta?</h2>
+    <p>Agendar como convidado é rápido. Com a conta, fica ainda melhor:</p>
+    <ul>
+      <li><span class="i"><svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="16" rx="5" ry="4.2"/><circle cx="6" cy="10" r="2.2"/><circle cx="10" cy="6.5" r="2.2"/><circle cx="14" cy="6.5" r="2.2"/><circle cx="18" cy="10" r="2.2"/></svg></span><span><b>Seus pets salvos</b>Nome, raça, porte e observações já preenchidos.</span></li>
+      <li><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><span><b>Histórico de serviços</b>Veja todos os banhos e tosas já feitos.</span></li>
+      <li><span class="i"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21l1.4-7L2 9.3l7-.8z"/></svg></span><span><b>Fidelidade</b>A loja sabe quantas vezes você já veio e pode criar benefícios para clientes frequentes.</span></li>
+      <li><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span><span><b>Agendar de novo em 2 toques</b>Repita o último serviço com um clique.</span></li>
+    </ul>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span><b style="color:#fff">Aurora Animal UltraPet</b> · Tv. Alberto Vítor, 15 · Centro · Niterói</span>
+    <span>Exemplo desenvolvido por <a href="https://firmiano.com.br" target="_blank" rel="noopener">Firmiano</a></span>
+  </div>
+</footer>
+<nav class="tabbar" aria-label="Navegação do app">
+  <a href="index.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Início</a>
+  <a href="agendar.html" class="cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar</a>
+  <a href="produtos.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 14H5z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Produtos</a>
+  <a href="entrar.html" class="ativo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Conta</a>
+</nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+document.getElementById('demo').addEventListener('click',()=>{location.href='minha-conta.html'});
+document.getElementById('f-login').addEventListener('submit',e=>{e.preventDefault();location.href='minha-conta.html'});
+</script>
+</body>
+</html>

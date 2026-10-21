@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agendar banho e tosa | Aurora Animal UltraPet</title>
+<meta name="description" content="Agende banho ou banho e tosa com pagamento antecipado.">
+<meta name="theme-color" content="#0B6E3A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="UltraPet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="demo-bar"><b>Demonstração</b> · Exemplo de app criado pela Firmiano. Nenhum pagamento real é processado.</div>
+<header class="top">
+  <div class="wrap">
+    <a href="index.html" class="logo" aria-label="Aurora Animal UltraPet, início">
+      <span class="logo-mark" style="color:#fff"><svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="16" rx="5" ry="4.2"/><circle cx="6" cy="10" r="2.2"/><circle cx="10" cy="6.5" r="2.2"/><circle cx="14" cy="6.5" r="2.2"/><circle cx="18" cy="10" r="2.2"/></svg></span>
+      <span class="logo-txt">Aurora Animal <span>UltraPet</span><small>Pet shop · Banho e tosa · Veterinária</small></span>
+    </a>
+    <ul class="nav">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="agendar.html" class="ativo">Agendar</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="entrar.html">Minha conta</a></li>
+    </ul>
+    <div class="top-acoes">
+      <a class="btn btn-claro btn-sm" href="entrar.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Entrar</a>
+      <a class="btn btn-vermelho btn-sm" href="agendar.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar</a>
+    </div>
+  </div>
+</header>
+
+<main class="app">
+  <div class="app-head">
+    <a class="voltar" href="index.html" aria-label="Voltar para o início" id="btn-sair"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a>
+    <div><p id="passo-n">Etapa 1 de 4</p><h1 id="titulo-etapa">Escolha o serviço</h1></div>
+  </div>
+  <div class="progresso" aria-hidden="true"><i></i></div>
+  <div class="etapas-txt"><span class="ok">Serviço</span><span>Horário</span><span>Dados</span><span>Pagamento</span></div>
+
+  <div class="palco">
+    <!-- 1 -->
+    <section class="etapa ativa" data-n="1">
+      <div class="card">
+        <h2>Qual serviço?</h2><p class="sub">Escolha o que seu pet vai fazer.</p>
+        <div class="opcoes">
+          <div class="opcao"><input type="radio" name="servico" id="servico-banho" value="banho"><label for="servico-banho"><span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg>Banho</span><span class="d">Banho completo, secagem e perfume.</span><span class="p" data-preco-servico="banho"></span></label></div>
+          <div class="opcao"><input type="radio" name="servico" id="servico-banhotosa" value="banhotosa"><label for="servico-banhotosa"><span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg>Banho e tosa</span><span class="d">Banho completo + tosa com acabamento.</span><span class="p" data-preco-servico="banhotosa"></span></label></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Porte do pet</h2><p class="sub">O valor muda conforme o porte.</p>
+        <div class="opcoes">
+          <div class="opcao"><input type="radio" name="porte" id="porte-pequeno" value="pequeno"><label for="porte-pequeno"><span class="t">Cão pequeno</span><span class="d">até 10 kg</span></label></div>
+          <div class="opcao"><input type="radio" name="porte" id="porte-medio" value="medio"><label for="porte-medio"><span class="t">Cão médio</span><span class="d">de 10 a 25 kg</span></label></div>
+          <div class="opcao"><input type="radio" name="porte" id="porte-grande" value="grande"><label for="porte-grande"><span class="t">Cão grande</span><span class="d">acima de 25 kg</span></label></div>
+          <div class="opcao"><input type="radio" name="porte" id="porte-gato" value="gato"><label for="porte-gato"><span class="t">Gato</span><span class="d">qualquer porte</span></label></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Extras</h2><p class="sub">Opcional.</p>
+        <div class="extra"><input type="checkbox" name="extra" value="hidratacao" id="ex1"><label for="ex1">Hidratação<small>Pelos mais macios e brilhosos</small></label><span class="v">+ R$ 20</span></div>
+        <div class="extra"><input type="checkbox" name="extra" value="unhas" id="ex2"><label for="ex2">Corte de unhas</label><span class="v">+ R$ 10</span></div>
+        <div class="extra"><input type="checkbox" name="extra" value="levatraz" id="ex3"><label for="ex3">Leva e traz<small>Buscamos e devolvemos o seu pet</small></label><span class="v">+ R$ 15</span></div>
+        <p class="nota-ex">* Valores de exemplo para a demonstração.</p>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="etapa" data-n="2">
+      <div class="card">
+        <h2>Escolha o dia</h2><p class="sub">Atendemos de terça a sábado, das 9h às 18h.</p>
+        <div class="dias" id="dias" role="group" aria-label="Dias disponíveis"></div>
+        <div class="horarios" id="horas" role="group" aria-label="Horários"></div>
+        <div class="legenda"><span>■ Livre</span><span style="text-decoration:line-through">Ocupado</span></div>
+      </div>
+      <div class="dica"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg><span>No app real, os horários vêm direto da agenda da loja, então nunca há dois pets no mesmo horário.</span></div>
+    </section>
+
+    <!-- 3 -->
+    <section class="etapa" data-n="3">
+      <div class="card">
+        <div class="abas" role="tablist">
+          <span class="ind"></span>
+          <button type="button" class="on" data-modo="convidado" role="tab">Continuar como convidado</button>
+          <button type="button" data-modo="login" role="tab">Entrar na minha conta</button>
+        </div>
+        <div data-painel="convidado" id="form-convidado">
+          <div class="campo"><label for="nome">Seu nome</label><input id="nome" autocomplete="name" placeholder="Como podemos te chamar?"></div>
+          <div class="campo"><label for="fone">WhatsApp</label><input id="fone" inputmode="tel" autocomplete="tel" placeholder="(21) 90000-0000"></div>
+          <div class="linha2">
+            <div class="campo"><label for="pet">Nome do pet</label><input id="pet" placeholder="Ex.: Thor"></div>
+            <div class="campo"><label for="raca">Raça (opcional)</label><input id="raca" placeholder="Ex.: Shih Tzu"></div>
+          </div>
+          <div class="campo"><label for="obs">Observações (opcional)</label><textarea id="obs" rows="2" placeholder="Alergias, comportamento, tipo de tosa..."></textarea></div>
+          <div class="dica"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg><span>Como convidado, você agenda sem criar senha. A confirmação chega no seu WhatsApp.</span></div>
+        </div>
+        <div data-painel="login" id="form-login" hidden>
+          <div class="campo"><label for="lg-email">E-mail</label><input id="lg-email" type="email" autocomplete="email" placeholder="voce@email.com"></div>
+          <div class="campo"><label for="lg-senha">Senha</label><input id="lg-senha" type="password" autocomplete="current-password" placeholder="••••••••"></div>
+          <button type="button" class="btn btn-claro btn-bloco" id="btn-entrar-demo">Preencher login de demonstração</button>
+          <div class="dica" style="margin-top:12px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg><span>Com a conta, a loja sabe quantas vezes cada cliente já veio, guarda os dados dos pets e o histórico de serviços.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="etapa" data-n="4">
+      <div class="card">
+        <h2>Resumo</h2><p class="sub">Confira antes de pagar.</p>
+        <div class="resumo" id="resumo"></div>
+      </div>
+      <div class="card">
+        <h2>Forma de pagamento</h2><p class="sub">O pagamento é antecipado e garante o seu horário.</p>
+        <div class="opcoes tres">
+          <div class="opcao"><input type="radio" name="pag" id="pag-pix" value="pix" checked><label for="pag-pix"><span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 4.5 4.5L12 11 7.5 6.5zM12 13l4.5 4.5L12 22l-4.5-4.5zM2 12l4.5-4.5L11 12l-4.5 4.5zM13 12l4.5-4.5L22 12l-4.5 4.5z"/></svg>Pix</span><span class="d">Aprovação na hora</span></label></div>
+          <div class="opcao"><input type="radio" name="pag" id="pag-cred" value="credito"><label for="pag-cred"><span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20M6 15h4"/></svg>Crédito</span><span class="d">Cartão de crédito</span></label></div>
+          <div class="opcao"><input type="radio" name="pag" id="pag-deb" value="debito"><label for="pag-deb"><span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20M6 15h4"/></svg>Débito</span><span class="d">Cartão de débito</span></label></div>
+        </div>
+
+        <div id="pg-pix" style="margin-top:16px">
+          <div id="pix-area" class="pix-box" hidden>
+            <p style="font-weight:800;color:var(--tinta)">Escaneie o QR Code ou copie o código</p>
+            <div class="qr" id="qr"></div>
+            <div class="copia"><input id="pix-copia" readonly aria-label="Código Pix copia e cola"><button type="button" class="btn btn-claro btn-sm" id="btn-copiar">Copiar</button></div>
+            <div class="aguardando"><span class="pontos"><i></i><i></i><i></i></span> Aguardando pagamento · <span class="timer" id="timer">10:00</span></div>
+            <button type="button" class="btn btn-claro btn-sm" id="btn-ja-paguei" style="margin-top:12px">Simular pagamento (demo)</button>
+          </div>
+        </div>
+
+        <div id="pg-cartao" hidden style="margin-top:16px">
+          <div class="cartao"><span class="tipo">Crédito</span><div class="chip"></div><div class="num">•••• •••• •••• ••••</div><div class="rod"><span class="nm">NOME NO CARTÃO</span><span class="vl">MM/AA</span></div></div>
+          <div class="campo"><label for="cc-num">Número do cartão</label><input id="cc-num" inputmode="numeric" autocomplete="off" placeholder="0000 0000 0000 0000"></div>
+          <div class="campo"><label for="cc-nome">Nome impresso</label><input id="cc-nome" autocomplete="off" placeholder="Como está no cartão"></div>
+          <div class="linha2">
+            <div class="campo"><label for="cc-val">Validade</label><input id="cc-val" inputmode="numeric" autocomplete="off" placeholder="MM/AA"></div>
+            <div class="campo"><label for="cc-cvv">CVV</label><input id="cc-cvv" inputmode="numeric" autocomplete="off" placeholder="123"></div>
+          </div>
+          <button type="button" class="btn btn-claro btn-sm" id="btn-teste">Usar cartão de teste</button>
+          <div class="aguardando" id="processando" hidden style="margin-top:12px"><span class="pontos"><i></i><i></i><i></i></span> Processando pagamento...</div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-vermelho btn-bloco btn-confirma" id="btn-pagar">
+        <span class="txt"><span class="lbl">Gerar Pix de </span>&nbsp;<span class="val"></span></span>
+        <span class="spin"><i></i></span>
+        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ok-txt">Agendado!</span></span>
+      </button>
+      <p class="nota-ex" style="text-align:center">Demonstração: nenhum dado é enviado e nenhuma cobrança é feita.</p>
+    </section>
+
+    <!-- 5 -->
+    <section class="etapa" data-n="5">
+      <div class="card sucesso">
+        <div class="selo"><span class="anel"></span><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+        <h2>Agendado com sucesso!</h2>
+        <p>Pagamento confirmado. Te esperamos no dia marcado.</p>
+        <div class="codigo"><small>Código do agendamento</small><b id="cod">AUR-0000</b></div>
+        <div class="resumo" style="text-align:left">
+          <div class="l"><span>Serviço</span><b id="suc-serv"></b></div>
+          <div class="l"><span>Quando</span><b id="suc-quando"></b></div>
+          <div class="l"><span>Pago</span><b id="suc-total"></b></div>
+          <div class="l"><span>Onde</span><b>Tv. Alberto Vítor, 15 · Centro</b></div>
+        </div>
+        <div class="acoes-final">
+          <button type="button" class="btn btn-verde btn-bloco" id="suc-ics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Salvar na minha agenda</button>
+          <a class="btn btn-claro btn-bloco" id="suc-wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43a9.43 9.43 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>Enviar confirmação no WhatsApp</a>
+          <a class="btn btn-claro btn-bloco" href="entrar.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Criar conta e acompanhar meus agendamentos</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="rodape-nav" style="display:flex;gap:10px;margin-top:6px">
+    <button type="button" class="btn btn-claro" id="btn-voltar" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>Voltar</button>
+    <button type="button" class="btn btn-verde" id="btn-prox" style="flex:1">Continuar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </div>
+</main>
+<nav class="tabbar" aria-label="Navegação do app">
+  <a href="index.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Início</a>
+  <a href="agendar.html" class="ativo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar</a>
+  <a href="produtos.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 14H5z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Produtos</a>
+  <a href="entrar.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Conta</a>
+</nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/agendar.js"></script>
+</body>
+</html>

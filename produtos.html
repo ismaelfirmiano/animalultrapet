@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Produtos | Aurora Animal UltraPet</title>
+<meta name="description" content="Conheça alguns produtos da loja: rações, farmácia, higiene e acessórios.">
+<meta name="theme-color" content="#0B6E3A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="UltraPet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="demo-bar"><b>Demonstração</b> · Exemplo de app criado pela Firmiano. Nenhum pagamento real é processado.</div>
+<header class="top">
+  <div class="wrap">
+    <a href="index.html" class="logo" aria-label="Aurora Animal UltraPet, início">
+      <span class="logo-mark" style="color:#fff"><svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="16" rx="5" ry="4.2"/><circle cx="6" cy="10" r="2.2"/><circle cx="10" cy="6.5" r="2.2"/><circle cx="14" cy="6.5" r="2.2"/><circle cx="18" cy="10" r="2.2"/></svg></span>
+      <span class="logo-txt">Aurora Animal <span>UltraPet</span><small>Pet shop · Banho e tosa · Veterinária</small></span>
+    </a>
+    <ul class="nav">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="agendar.html">Agendar</a></li>
+      <li><a href="produtos.html" class="ativo">Produtos</a></li>
+      <li><a href="entrar.html">Minha conta</a></li>
+    </ul>
+    <div class="top-acoes">
+      <a class="btn btn-claro btn-sm" href="entrar.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Entrar</a>
+      <a class="btn btn-vermelho btn-sm" href="agendar.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="secao" style="padding-top:44px">
+  <div class="wrap">
+    <div class="cab" data-reveal>
+      <span class="eyebrow">Vitrine da loja</span>
+      <h2>Tudo para o seu pet, da ração ao laço.</h2>
+      <p>Confira alguns produtos que você encontra na loja. A compra é feita direto no balcão ou pelo WhatsApp.</p>
+    </div>
+    <div class="aviso-vitrine" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg><span><b>Só vitrine, sem venda pelo app.</b> Os produtos abaixo são exemplos. A loja cadastra e atualiza os seus pelo painel.</span></div>
+    <div class="cats">
+      <a class="cat" href="#lista" data-filtro="Rações" data-reveal><img src="img/loja.jpg" alt="Prateleiras de ração da loja" loading="lazy"><span>Rações</span></a>
+      <a class="cat" href="#lista" data-filtro="Farmácia" data-reveal><img src="img/farmacia.jpg" alt="Vitrine de medicamentos" loading="lazy"><span>Farmácia</span></a>
+      <a class="cat" href="#lista" data-filtro="Higiene" data-reveal><img src="img/higiene.jpg" alt="Shampoos usados no banho" loading="lazy"><span>Higiene</span></a>
+      <a class="cat" href="#lista" data-filtro="Acessórios" data-reveal><img src="img/pet-3.jpg" alt="Cães com roupinhas e laços" loading="lazy"><span>Acessórios</span></a>
+    </div>
+    <div class="filtros" id="lista" role="group" aria-label="Filtrar produtos">
+      <button type="button" class="on" data-f="todos">Todos</button>
+      <button type="button" data-f="Rações">Rações</button>
+      <button type="button" data-f="Farmácia">Farmácia</button>
+      <button type="button" data-f="Higiene">Higiene</button>
+      <button type="button" data-f="Acessórios">Acessórios</button>
+    </div>
+    <div class="produtos" id="produtos"><article class="prod" data-cat="Rações" data-reveal>
+  <div class="im" style="background:#E3F3EA"><svg viewBox="0 0 24 24" fill="none" stroke="#0B6E3A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12l1 4v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8z"/><path d="M5 8h14"/><ellipse cx="12" cy="14" rx="3" ry="2.3"/><circle cx="9.3" cy="11.6" r=".9"/><circle cx="14.7" cy="11.6" r=".9"/></svg><span class="badge">Destaque</span></div>
+  <div class="c"><span class="cat-n">Rações</span><h3>Ração premium para cães adultos</h3><p>Embalagens de vários tamanhos.</p><span class="disp"><i></i>Disponível na loja</span>
+  <a class="btn btn-claro btn-sm" target="_blank" rel="noopener" href="https://wa.me/5521985891616?text=Olá!%20Vi%20no%20app%20o%20produto:%20Ração%20premium%20para%20cães%20adultos.%20Vocês%20têm%20disponível?"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43a9.43 9.43 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>Perguntar no WhatsApp</a></div>
+</article><article class="prod" data-cat="Rações" data-reveal>
+  <div class="im" style="background:#E3F3EA"><svg viewBox="0 0 24 24" fill="none" stroke="#0B6E3A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12l1 4v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8z"/><path d="M5 8h14"/><ellipse cx="12" cy="14" rx="3" ry="2.3"/><circle cx="9.3" cy="11.6" r=".9"/><circle cx="14.7" cy="11.6" r=".9"/></svg></div>
+  <div class="c"><span class="cat-n">Rações</span><h3>Ração para gatos castrados</h3><p>Fórmula para controle de peso.</p><span class="disp"><i></i>Disponível na loja</span>
+  <a class="btn btn-claro btn-sm" target="_blank" rel="noopener" href="https://wa.me/5521985891616?text=Olá!%20Vi%20no%20app%20o%20produto:%20Ração%20para%20gatos%20castrados.%20Vocês%20têm%20disponível?"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43a9.43 9.43 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>Perguntar no WhatsApp</a></div>
+</article><article class="prod" data-cat="Farmácia" data-reveal>
+  <div class="im" style="background:#FDECEB"><svg viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="3"/><path d="M12 9v6M9 12h6"/></svg></div>
+  <div class="c"><span class="cat-n">Farmácia</span><h3>Antipulgas e carrapatos</h3><p>Diversas marcas e pesos. Consulte o veterinário.</p><span class="disp"><i></i>Disponível na loja</span>
+  <a class="btn btn-claro btn-sm" target="_blank" rel="noopener" href="https://wa.me/5521985891616?text=Olá!%20Vi%20no%20app%20o%20produto:%20Antipulgas%20e%20carrapatos.%20Vocês%20têm%20disponível?"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43a9.43 9.43 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>Perguntar no WhatsApp</a></div>
+</article><article class="prod" data-cat="Farmácia" data-reveal>
+  <div class="im" style="background:#FDECEB"><svg viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="3"/><path d="M12 9v6M9 12h6"/></svg></div>
+  <div class="c"><span class="cat-n">Farmácia</span><h3>Vermífugo</h3><p>Para cães e gatos.</p><span class="disp"><i></i>Disponível na loja</span>
+  <a class="btn btn-claro btn-sm" target="_blank" rel="noopener" href="https://wa.me/5521985891616?text=Olá!%20Vi%20no%20app%20o%20produto:%20Vermífugo.%20Vocês%20têm%20disponível?"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43a9.43 9.43 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>Perguntar no WhatsApp</a></div>
+</article><article class="prod" data-cat="Higiene" data-reveal>
+  <div class="im" style="background:#EAF1FB"><svg viewBox="0 0 24 24" fill="none" stroke="#2F6DB5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v3H9z"/><path d="M8 6h8l1 3v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9z"/><path d="M10 13h4"/></svg><span class="badge">Novidade</span></div>
+  <div class="c"><span class="cat-n">Higiene</span><h3>Shampoo e condicionador pet</h3><p>Os mesmos que usamos no banho.</p><span class="disp"><i></i>Disponível na loja</span>
+  <a class="btn btn-claro btn-sm" target="_blank" rel="noopener" href="https://wa.me/5521985891616?text=Olá!%20Vi%20no%20app%20o%20produto:%20Shampoo%20e%20condicionador%20pet.%20Vocês%20têm%20disponível?"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43a9.43 9.43 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>Perguntar no WhatsApp</a></div>
+</article><article class="prod" data-cat="Higiene" data-reveal>
+  <div class="im" style="background:#EAF1FB"><svg viewBox="0 0 24 24" fill="none" stroke="#2F6DB5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v3H9z"/><path d="M8 6h8l1 3v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9z"/><path d="M10 13h4"/></svg></div>
+  <div class="c"><span class="cat-n">Higiene</span><h3>Tapete higiênico</h3><p>Pacotes com várias unidades.</p><span class="disp"><i></i>Disponível na loja</span>
+  <a class="btn btn-claro btn-sm" target="_blank" rel="noopener" href="https://wa.me/5521985891616?text=Olá!%20Vi%20no%20app%20o%20produto:%20Tapete%20higiênico.%20Vocês%20têm%20disponível?"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43a9.43 9.43 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>Perguntar no WhatsApp</a></div>
+</article><article class="prod" data-cat="Acessórios" data-reveal>
+  <div class="im" style="background:#FFF4D6"><svg viewBox="0 0 24 24" fill="none" stroke="#B98300" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><path d="M12 5V2"/></svg></div>
+  <div class="c"><span class="cat-n">Acessórios</span><h3>Coleiras e guias</h3><p>Vários tamanhos e cores.</p><span class="disp"><i></i>Disponível na loja</span>
+  <a class="btn btn-claro btn-sm" target="_blank" rel="noopener" href="https://wa.me/5521985891616?text=Olá!%20Vi%20no%20app%20o%20produto:%20Coleiras%20e%20guias.%20Vocês%20têm%20disponível?"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43a9.43 9.43 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>Perguntar no WhatsApp</a></div>
+</article><article class="prod" data-cat="Acessórios" data-reveal>
+  <div class="im" style="background:#FFF4D6"><svg viewBox="0 0 24 24" fill="none" stroke="#B98300" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c3 3 3 13 0 16M12 4c-3 3-3 13 0 16"/></svg></div>
+  <div class="c"><span class="cat-n">Acessórios</span><h3>Brinquedos</h3><p>Bolinhas, mordedores e pelúcias.</p><span class="disp"><i></i>Disponível na loja</span>
+  <a class="btn btn-claro btn-sm" target="_blank" rel="noopener" href="https://wa.me/5521985891616?text=Olá!%20Vi%20no%20app%20o%20produto:%20Brinquedos.%20Vocês%20têm%20disponível?"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43a9.43 9.43 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>Perguntar no WhatsApp</a></div>
+</article></div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <span><b style="color:#fff">Aurora Animal UltraPet</b> · Tv. Alberto Vítor, 15 · Centro · Niterói</span>
+    <span>Exemplo desenvolvido por <a href="https://firmiano.com.br" target="_blank" rel="noopener">Firmiano</a></span>
+  </div>
+</footer>
+<nav class="tabbar" aria-label="Navegação do app">
+  <a href="index.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Início</a>
+  <a href="agendar.html" class="cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar</a>
+  <a href="produtos.html" class="ativo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 14H5z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Produtos</a>
+  <a href="entrar.html" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Conta</a>
+</nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+(function(){
+  const bts=[...document.querySelectorAll('.filtros button')], prods=[...document.querySelectorAll('.prod')];
+  function filtra(f){
+    bts.forEach(b=>b.classList.toggle('on',b.dataset.f===f));
+    const mostrar=prods.filter(p=>f==='todos'||p.dataset.cat===f), esconder=prods.filter(p=>!mostrar.includes(p));
+    gsap.to(esconder,{autoAlpha:0,scale:.92,duration:.2,onComplete:()=>esconder.forEach(p=>p.hidden=true)});
+    gsap.delayedCall(.21,()=>{mostrar.forEach(p=>p.hidden=false);gsap.fromTo(mostrar,{autoAlpha:0,y:16,scale:.96},{autoAlpha:1,y:0,scale:1,stagger:.05,duration:.4,ease:"power3.out"});});
+  }
+  bts.forEach(b=>b.addEventListener('click',()=>filtra(b.dataset.f)));
+  document.querySelectorAll('.cat').forEach(c=>c.addEventListener('click',()=>filtra(c.dataset.filtro)));
+})();
+</script>
+</body>
+</html>
